@@ -1,0 +1,124 @@
+.formacao {
+  color: #ffffff;
+  background: #141414;
+}
+
+.formacao .subtitulo {
+  color: #000000;
+}
+
+.formacao-paragrafo {
+  font-size: 1.5rem;
+  color: #a3a3a3;
+  line-height: 1.4;
+  max-width: 50ch;
+  margin-bottom: 60px;
+}
+
+.formacao-paragrafo strong {
+  color: #fff;
+}
+
+.faculdades-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  background: #090909;
+  border-radius: 4px;
+  padding: 25px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-tipo {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #a3a3a3;
+}
+
+.faculdade-curso {
+  margin-bottom: 50px;
+  flex: 1;
+  position: relative;
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 4px;
+  left: -25px;
+  top: 2px;
+  background: linear-gradient(#b6f829, #67dd0a);
+}
+
+.formacao-extra h3 {
+  text-transform: uppercase;
+  color: #8f8f8f;
+  font-size: 0.875rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  top: -4px;
+  left: -40px;
+}
+
+.formacao-extra .cursos-intensivos h3::before {
+  background: url("../img/cursos.svg");
+}
+
+.formacao-extra .idiomas h3::before {
+  background: url("../img/idiomas.svg");
+}
+
+.formacao-extra li {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cursos-intensivos {
+  margin-bottom: 70px;
+}
+
+.formacao-extra li span {
+  color: #8f8f8f;
+}
+
+.cursos-intensivos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formacao .container {
+    grid-template-columns: 1fr;
+    padding: 80px 20px;
+    gap: 40px;
+  }
+  .formacao .subtitulo {
+    color: #fff;
+  }
+  .formacao-paragrafo {
+    font-size: 1.35rem;
+    margin-bottom: 40px;
+  }
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}

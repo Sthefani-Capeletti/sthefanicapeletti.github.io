@@ -1,0 +1,24 @@
+/* GLOBAL */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  padding: 120px 20px;
+}
+
+.subtitulo {
+  text-transform: uppercase;
+  font-size: 8rem;
+  max-width: 5ch;
+  word-break: break-all;
+  line-height: 1;
+}
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 4.5rem;
+    max-width: initial;
+    text-transform: capitalize;
+  }
+}

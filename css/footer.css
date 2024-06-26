@@ -1,0 +1,64 @@
+.footer {
+  background: #000;
+}
+
+.footer .container {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+}
+
+.footer .container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  background: url("../img/detalhe.svg");
+  top: -55px;
+  left: 30px;
+}
+
+.footer-text {
+  color: #cccccc;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 50ch;
+}
+
+.lista-contatos li {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.lista-contatos li a {
+  color: white;
+  display: block;
+  text-decoration: underline;
+}
+
+.footer-direitos {
+  max-width: 1200px;
+  padding: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.direitos-paragrafo {
+  color: #8f8f8f;
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .footer .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .lista-contatos li {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+}
